@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reaper | Pixel-Art Horror Game for iPhone and iPad</title>
+    <meta name="description" content="Reaper is a pixel-art horror game for iPhone and iPad. You are Death on a quota: take only the marked souls before dawn, because every living soul you reap costs a heart.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0a0a0f">
+    <meta name="color-scheme" content="dark">
+    <link rel="canonical" href="https://reaper-ios.netlify.app/">
+    <meta property="og:site_name" content="Reaper">
+    <meta property="og:title" content="Reaper | Pixel-Art Horror Game for iPhone and iPad">
+    <meta property="og:description" content="You are Death on a quota. Your light is small, the night is not, and taking the wrong soul costs a heart.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en">
+    <meta property="og:url" content="https://reaper-ios.netlify.app/">
+    <meta property="og:image" content="https://reaper-ios.netlify.app/assets/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Reaper title screen: the word REAPER in bone white over a black field, with the Night 1 quota below it.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Reaper | Pixel-Art Horror Game for iPhone and iPad">
+    <meta name="twitter:description" content="You are Death on a quota. Your light is small, the night is not, and taking the wrong soul costs a heart.">
+    <meta name="twitter:image" content="https://reaper-ios.netlify.app/assets/og-image.png">
+    <meta name="twitter:image:alt" content="Reaper title screen: the word REAPER in bone white over a black field.">
+    <link rel="icon" href="assets/favicon.png" sizes="64x64">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" as="image" href="assets/screenshots/iphone/02-gameplay.png">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "VideoGame",
+        "name": "Reaper",
+        "applicationCategory": "GameApplication",
+        "gamePlatform": ["iPhone", "iPad"],
+        "operatingSystem": "iOS 18.0 or later",
+        "genre": ["Arcade", "Horror"],
+        "description": "Reaper is a pixel-art horror game for iPhone and iPad. You play Death working a nightly quota: reap only the marked souls before dawn, because every living creature you take costs a heart.",
+        "image": "https://reaper-ios.netlify.app/assets/og-image.png",
+        "url": "https://reaper-ios.netlify.app/",
+        "inLanguage": "en",
+        "author": { "@type": "Person", "name": "Patrik Cesnek" },
+        "publisher": { "@type": "Person", "name": "Patrik Cesnek" }
+      }
+    </script>
+    <!--
+      When Reaper goes live on the App Store:
+        1. add an "offers" block to the JSON-LD above with the real app id, e.g.
+           "offers": { "@type": "Offer", "url": "https://apps.apple.com/app/idXXXXXXXXX",
+                       "price": "0", "priceCurrency": "USD" }
+        2. swap every .btn-pending span on this site for an <a class="btn btn-primary">
+           pointing at that same URL (index.html hero, index.html closing band, 404.html).
+    -->
+  </head>
+  <body data-page="home">
+    <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to content</a>
+    <div class="atmosphere" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="/" aria-label="Reaper home">
+          <img src="assets/icon.png" alt="" width="30" height="30">
+          <span>REAPER</span>
+        </a>
+        <nav class="nav" aria-label="Main">
+          <a href="#rules" data-nav="rules" data-i18n="nav.rules">The rules</a>
+          <a href="#screens" data-i18n="nav.screens">Screens</a>
+          <a href="/support" data-i18n="nav.support">Support</a>
+          <a href="/privacy" data-i18n="nav.privacy">Privacy</a>
+          <div class="lang" role="group" aria-label="Language">
+            <button type="button" data-lang="en">EN</button>
+            <button type="button" data-lang="sk">SK</button>
+            <button type="button" data-lang="cs">CS</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="wrap">
+          <div>
+            <p class="eyebrow" data-i18n="hero.eyebrow">iPhone and iPad</p>
+            <h1>REAPER</h1>
+            <p class="hero-text" data-i18n="hero.text">Death on a quota. Your light is small, the night is not, and taking the wrong soul costs a heart.</p>
+            <div class="hero-actions">
+              <span class="btn btn-pending" data-i18n="cta.pending">Coming to the App Store</span>
+              <a class="btn btn-ghost" href="#rules" data-i18n="cta.rules">How it plays</a>
+            </div>
+          </div>
+          <figure class="torch" id="torch">
+            <img class="torch-base" src="assets/screenshots/iphone/02-gameplay.png" alt="" aria-hidden="true">
+            <img class="torch-lit" src="assets/screenshots/iphone/02-gameplay.png" alt="Reaper gameplay: a hooded pixel reaper stands in a small circle of light on a black field, with five hearts, a countdown, and a souls counter along the top edge." width="1434" height="660">
+            <span class="torch-glow" aria-hidden="true"></span>
+            <figcaption class="torch-hint" data-i18n="hero.torch">Move to light the dark</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section" id="rules">
+        <div class="wrap">
+          <h2 class="section-title" data-i18n="rules.title">The list is short. Keeping to it is not.</h2>
+          <p class="section-lede" data-i18n="rules.lede">You drift through a graveyard you can barely see, with a joystick in one corner and a quota hanging over you. Everything that matters happens inside your light.</p>
+          <div class="rules-grid">
+            <article class="rule rule-marked reveal">
+              <h3 data-i18n="rules.marked.title">The marked</h3>
+              <p data-i18n="rules.marked.text">Creatures wearing a skull are due tonight. Tap one inside your light and the scythe takes its soul.</p>
+            </article>
+            <article class="rule rule-living reveal">
+              <h3 data-i18n="rules.living.title">The living</h3>
+              <p data-i18n="rules.living.text">The unmarked are not yours. Reaping one still counts toward the quota, but it costs a heart. Take fewer than three and your hearts return at dawn.</p>
+            </article>
+            <article class="rule reveal">
+              <h3 data-i18n="rules.dawn.title">Before dawn</h3>
+              <p data-i18n="rules.dawn.text">Meet the quota before the clock runs out, or the souls slip away and the night is lost. Five hearts is all you get.</p>
+            </article>
+            <figure class="rule rule-shot reveal">
+              <img src="assets/screenshots/iphone/03-tutorial.png" alt="Reaper tutorial card reading THE LIVING, explaining that unmarked creatures are not yours to take and that reaping one costs a heart." width="1434" height="660" loading="lazy">
+              <figcaption data-i18n="rules.shot.caption">The game teaches the rule before it holds you to it</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap">
+          <h2 class="section-title" data-i18n="nights.title">Every night asks for more.</h2>
+          <div class="nights">
+            <article class="night reveal">
+              <p class="night-no" data-i18n="nights.n1.label">Night 1</p>
+              <p class="night-quota">5<span data-i18n="nights.souls">Souls</span></p>
+              <p class="night-meta">1:26</p>
+              <p data-i18n="nights.n1.text">Three marked souls can be out at once. There is room to hesitate.</p>
+            </article>
+            <article class="night reveal">
+              <p class="night-no" data-i18n="nights.n5.label">Night 5</p>
+              <p class="night-quota">13<span data-i18n="nights.souls">Souls</span></p>
+              <p class="night-meta">2:30</p>
+              <p data-i18n="nights.n5.text">Two at a time from here on, and everything moves a fifth faster.</p>
+            </article>
+            <article class="night reveal">
+              <p class="night-no" data-i18n="nights.n10.label">Night 10</p>
+              <p class="night-quota">23<span data-i18n="nights.souls">Souls</span></p>
+              <p class="night-meta">3:50</p>
+              <p data-i18n="nights.n10.text">Twenty six creatures crowd the dark and only a handful are yours.</p>
+            </article>
+            <article class="night reveal">
+              <p class="night-no" data-i18n="nights.n15.label">Night 15</p>
+              <p class="night-quota">33<span data-i18n="nights.souls">Souls</span></p>
+              <p class="night-meta">5:00</p>
+              <p data-i18n="nights.n15.text">The clock stops growing at five minutes. The quota does not.</p>
+            </article>
+          </div>
+          <p class="nights-note" data-i18n="nights.note">Every night is built so the quota can be met without touching a single living creature. The margin just keeps getting thinner, and nothing outruns you: creatures are capped at 85 percent of your speed.</p>
+        </div>
+      </section>
+
+      <section class="section" id="screens">
+        <div class="wrap">
+          <h2 class="section-title" data-i18n="screens.title">See it in the dark.</h2>
+        </div>
+        <div class="wrap">
+          <div class="gallery">
+            <figure>
+              <img src="assets/screenshots/iphone/01-briefing.png" alt="Reaper title screen: REAPER in large bone-white letters, NIGHT 1 in cyan, the line REAP 5 SOULS, and a BEGIN button." width="1434" height="660" loading="lazy">
+              <figcaption data-i18n="screens.briefing">The night's contract</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/screenshots/iphone/02-gameplay.png" alt="Gameplay: the reaper stands in a small circle of light beside a gravestone, hearts and a countdown across the top, joystick bottom left." width="1434" height="660" loading="lazy">
+              <figcaption data-i18n="screens.gameplay">A small light in a large night</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/screenshots/iphone/03-tutorial.png" alt="Tutorial card explaining the living: unmarked creatures cost a heart if you reap them." width="1434" height="660" loading="lazy">
+              <figcaption data-i18n="screens.tutorial">Four cards, then you are on your own</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/screenshots/iphone/04-profile.png" alt="Reaper profile screen showing cloak colorways and records for deepest night, souls taken, and merciful nights." width="1434" height="660" loading="lazy">
+              <figcaption data-i18n="screens.profile">Records, cloaks, and Game Center</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/screenshots/iphone/05-paused.png" alt="Paused screen with music, sound, and haptics toggles and a resume button." width="1434" height="660" loading="lazy">
+              <figcaption data-i18n="screens.paused">Pause anywhere, the night waits</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap cloaks">
+          <div class="cloaks-shot reveal">
+            <img src="assets/screenshots/ipad/04-profile.png" alt="Reaper profile on iPad showing the cloak picker with five colorways and the records panel underneath." width="1032" height="1376" loading="lazy">
+          </div>
+          <div>
+            <p class="eyebrow" data-i18n="cloaks.eyebrow">Wear something else</p>
+            <h2 class="section-title" data-i18n="cloaks.title">Five cloaks. None of them help.</h2>
+            <p class="section-lede" data-i18n="cloaks.text">Colorways are a palette swap on the same pixel art, so the cloak changes and the odds do not. All five are free, and the one you pick carries over to every night.</p>
+            <div class="swatches">
+              <div class="swatch">
+                <i style="background: linear-gradient(150deg, #2c2e3a 0%, #101016 100%)"></i>
+                <span data-i18n="cloaks.classic">Classic</span>
+              </div>
+              <div class="swatch">
+                <i style="background: linear-gradient(150deg, #8c2a2a 0%, #601418 100%)"></i>
+                <span data-i18n="cloaks.blood">Blood</span>
+              </div>
+              <div class="swatch">
+                <i style="background: linear-gradient(150deg, #20828c 0%, #12545c 100%)"></i>
+                <span data-i18n="cloaks.soul">Soul</span>
+              </div>
+              <div class="swatch">
+                <i style="background: linear-gradient(150deg, #543076 0%, #341a4a 100%)"></i>
+                <span data-i18n="cloaks.shadow">Shadow</span>
+              </div>
+              <div class="swatch">
+                <i style="background: linear-gradient(150deg, #be9630 0%, #8c681c 100%)"></i>
+                <span data-i18n="cloaks.gold">Gold</span>
+              </div>
+            </div>
+            <p class="cloaks-note" data-i18n="cloaks.note">Premium cloaks arrive in a future update.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap">
+          <h2 class="section-title" data-i18n="ach.title">Nine ways to be remembered.</h2>
+          <p class="section-lede" data-i18n="ach.lede">Achievements and the deepest-night leaderboard run through Game Center. Sign in and they sync. Stay signed out and everything still records on your device.</p>
+          <div class="achievements">
+            <article class="ach reveal">
+              <h3 data-i18n="ach.first.title">First harvest</h3>
+              <p data-i18n="ach.first.text">Collect your first marked soul.</p>
+            </article>
+            <article class="ach reveal">
+              <h3 data-i18n="ach.n1.title">Apprentice of death</h3>
+              <p data-i18n="ach.n1.text">Complete night 1.</p>
+            </article>
+            <article class="ach reveal">
+              <h3 data-i18n="ach.n5.title">Five nights deep</h3>
+              <p data-i18n="ach.n5.text">Complete night 5.</p>
+            </article>
+            <article class="ach reveal">
+              <h3 data-i18n="ach.n10.title">Decade of darkness</h3>
+              <p data-i18n="ach.n10.text">Complete night 10.</p>
+            </article>
+            <article class="ach reveal">
+              <h3 data-i18n="ach.merciful.title">Merciful</h3>
+              <p data-i18n="ach.merciful.text">Complete a night without touching the living.</p>
+            </article>
+            <article class="ach reveal">
+              <h3 data-i18n="ach.bargain.title">Dark bargain</h3>
+              <p data-i18n="ach.bargain.text">Complete a night after taking three or more living souls.</p>
+            </article>
+            <article class="ach reveal">
+              <h3 data-i18n="ach.thread.title">By a thread</h3>
+              <p data-i18n="ach.thread.text">Complete a night with a single heart left.</p>
+            </article>
+            <article class="ach reveal">
+              <h3 data-i18n="ach.reaped.title">The reaper, reaped</h3>
+              <p data-i18n="ach.reaped.text">Die. Even Death has quotas.</p>
+            </article>
+            <article class="ach ach-wide reveal">
+              <h3 data-i18n="ach.hundred.title">Hundred souls</h3>
+              <p data-i18n="ach.hundred.text">Collect one hundred souls, all time. The count never resets, however many nights it takes you.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap">
+          <h2 class="section-title" data-i18n="facts.title">No account. No ads. No tracking.</h2>
+          <div class="facts">
+            <div class="fact">
+              <h3 data-i18n="facts.offline.title">Plays offline</h3>
+              <p data-i18n="facts.offline.text">Every night runs on device. Airplane mode changes nothing.</p>
+            </div>
+            <div class="fact">
+              <h3 data-i18n="facts.account.title">No sign up</h3>
+              <p data-i18n="facts.account.text">There is no Reaper account, no email field, and no password to forget.</p>
+            </div>
+            <div class="fact">
+              <h3 data-i18n="facts.privacy.title">Nothing collected</h3>
+              <p data-i18n="facts.privacy.text">No analytics, no ads, no third-party SDKs. Your progress stays on your device.</p>
+            </div>
+            <div class="fact">
+              <h3 data-i18n="facts.gamecenter.title">Game Center optional</h3>
+              <p data-i18n="facts.gamecenter.text">Decline it and the game never asks again. Local records keep working.</p>
+            </div>
+            <div class="fact">
+              <h3 data-i18n="facts.universal.title">iPhone and iPad</h3>
+              <p data-i18n="facts.universal.text">One universal app, landscape, built for touch with a thumb joystick.</p>
+            </div>
+            <div class="fact">
+              <h3 data-i18n="facts.requirements.title">iOS 18 or later</h3>
+              <p data-i18n="facts.requirements.text">Music, sound, and haptics each toggle off in the pause screen.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section closing">
+        <div class="wrap">
+          <h2 data-i18n="closing.title">Dawn is coming either way.</h2>
+          <p data-i18n="closing.text">Reaper is finished and heading to review. Support is already open if you need it.</p>
+          <div class="hero-actions">
+            <span class="btn btn-pending" data-i18n="cta.pending">Coming to the App Store</span>
+            <a class="btn btn-ghost" href="/support" data-i18n="nav.support">Support</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="footer-links">
+          <a href="/support" data-i18n="nav.support">Support</a>
+          <a href="/privacy" data-i18n="nav.privacy">Privacy</a>
+          <a href="mailto:pcesnek290@gmail.com?subject=Reaper" data-i18n="footer.contact">Contact</a>
+        </div>
+        <p class="footer-legal" data-i18n="footer.legal">Reaper, an independent game by Patrik Cesnek</p>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

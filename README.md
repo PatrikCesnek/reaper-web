@@ -64,15 +64,14 @@ to 1200x630.
 
 ## Running it locally
 
-Any static server works. From this folder:
-
 ```sh
-python3 -m http.server 4173
+python3 scripts/serve.py        # http://localhost:4173
+python3 scripts/serve.py 8080   # or pick a port
 ```
 
-Then open <http://localhost:4173>. Note that `python3 -m http.server` does not
-apply the `netlify.toml` redirects, so use `/support.html` and `/privacy.html`
-locally, or run `netlify dev` for the real routing.
+`scripts/serve.py` mirrors `netlify.toml`, so `/support` and `/privacy` resolve
+without the `.html` and unknown paths return the real 404 page with a 404
+status. A plain `python3 -m http.server` also works but skips all of that.
 
 ## Deploying
 

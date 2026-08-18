@@ -1,0 +1,48 @@
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# Node / tooling (only if a build step is ever added)
+node_modules/
+dist/
+.cache/
+*.log
+npm-debug.log*
+
+# Env
+.env
+.env.*
+!.env.example
+
+# Netlify
+.netlify/
+
+# AI assistant files
+.claude/
+CLAUDE.md
+CLAUDE.local.md
+AGENTS.md
+GEMINI.md
+.claude-flow/
+claude-flow*
+.swarm/
+.hive-mind/
+/memory/
+/coordination/
+.mcp.json
+.ruflo/
+.aider*
+.cursor/
+.cursorrules
+.gemini/
+.codex/
+.github/copilot-instructions.md
+graphify-out/

@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reaper Support | Help with Hearts, Game Center, and Progress</title>
+    <meta name="description" content="Support for Reaper on iPhone and iPad. How the hearts and mercy rule work, Game Center, where your progress is stored, sound and haptics, and how to reach the developer.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0a0a0f">
+    <meta name="color-scheme" content="dark">
+    <link rel="canonical" href="https://reaper-ios.netlify.app/support">
+    <meta property="og:site_name" content="Reaper">
+    <meta property="og:title" content="Reaper Support">
+    <meta property="og:description" content="Help with hearts, the mercy rule, Game Center, progress, sound, and haptics.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://reaper-ios.netlify.app/support">
+    <meta property="og:image" content="https://reaper-ios.netlify.app/assets/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Reaper title screen: the word REAPER in bone white over a black field.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Reaper Support">
+    <meta name="twitter:description" content="Help with hearts, the mercy rule, Game Center, progress, sound, and haptics.">
+    <meta name="twitter:image" content="https://reaper-ios.netlify.app/assets/og-image.png">
+    <meta name="twitter:image:alt" content="Reaper title screen: the word REAPER in bone white over a black field.">
+    <link rel="icon" href="assets/favicon.png" sizes="64x64">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do I play Reaper?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Drift with the joystick in the bottom corner. Creatures wearing a skull are marked and due tonight. Tap a marked creature inside your circle of light to swing the scythe and take its soul. Meet the quota before the clock runs out." }
+          },
+          {
+            "@type": "Question",
+            "name": "Why am I losing hearts?",
+            "acceptedAnswer": { "@type": "Answer", "text": "You reaped a creature that was not marked. Unmarked creatures still count toward the quota, but each one costs a heart. You start every run with five." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I get my hearts back?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Finish a night having reaped fewer than three living creatures and all five hearts return at dawn. That is the mercy rule." }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens when I run out of hearts?",
+            "acceptedAnswer": { "@type": "Answer", "text": "The run ends and Rise Again starts you back at night 1 with five hearts. Your lifetime records, achievements, and deepest night are kept." }
+          },
+          {
+            "@type": "Question",
+            "name": "I ran out of time. Do I lose anything?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. Try Again restarts the same night with the hearts you began that night with, so hearts spent on a failed attempt are returned." }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I have to use Game Center?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. If you decline or sign out, Reaper never asks again and keeps your records on the device. Sign in and the deepest-night leaderboard and nine achievements sync." }
+          },
+          {
+            "@type": "Question",
+            "name": "Where is my progress stored?",
+            "acceptedAnswer": { "@type": "Answer", "text": "On your device only. There is no Reaper account and no server. Deleting the app deletes your local records. Game Center achievements and leaderboard scores stay with your Apple Account." }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Reaper need an internet connection?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. Every night runs entirely on device. Only Game Center syncing needs a connection, and it is optional." }
+          },
+          {
+            "@type": "Question",
+            "name": "Why do I feel no haptics?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Haptics need an iPhone with a Taptic Engine. iPad has no haptic engine, so the game silently skips them. You can also switch haptics off in the pause screen." }
+          },
+          {
+            "@type": "Question",
+            "name": "What do I need to run Reaper?",
+            "acceptedAnswer": { "@type": "Answer", "text": "An iPhone or iPad running iOS 18 or later. Reaper is one universal app and plays in landscape." }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body data-page="support">
+    <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to content</a>
+    <div class="atmosphere" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="/" aria-label="Reaper home">
+          <img src="assets/icon.png" alt="" width="30" height="30">
+          <span>REAPER</span>
+        </a>
+        <nav class="nav" aria-label="Main">
+          <a href="/" data-i18n="nav.home">Home</a>
+          <a href="/support" aria-current="page" data-i18n="nav.support">Support</a>
+          <a href="/privacy" data-i18n="nav.privacy">Privacy</a>
+          <div class="lang" role="group" aria-label="Language">
+            <button type="button" data-lang="en">EN</button>
+            <button type="button" data-lang="sk">SK</button>
+            <button type="button" data-lang="cs">CS</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="doc-head">
+        <div class="wrap">
+          <h1 data-i18n="support.title">Support</h1>
+          <p data-i18n="support.intro">Everything below is answered from how the game actually behaves. If your question is not here, write to me directly and you will get a real reply.</p>
+        </div>
+      </section>
+
+      <section class="doc">
+        <div class="wrap">
+          <div class="contact-panel">
+            <div>
+              <h2 data-i18n="support.contact.title">Reach the developer</h2>
+              <p data-i18n="support.contact.text">Reaper is made by one person. Bug reports, refund questions, and ideas all land in the same inbox.</p>
+              <p class="contact-note" data-i18n="support.contact.note">Include your device, your iOS version, and the night you were on. Most replies go out within two working days.</p>
+            </div>
+            <a class="btn btn-primary" href="mailto:pcesnek290@gmail.com?subject=Reaper%20Support" data-i18n="support.contact.button">Email support</a>
+          </div>
+
+          <h2 data-i18n="support.playing.title">Playing</h2>
+          <div class="faq">
+            <details>
+              <summary data-i18n="faq.play.q">How do I play?</summary>
+              <p data-i18n="faq.play.a">Drift with the joystick in the bottom corner. Creatures wearing a skull are marked and due tonight. Tap a marked creature inside your circle of light to swing the scythe and take its soul. Meet the quota before the clock runs out and the night is yours.</p>
+            </details>
+            <details>
+              <summary data-i18n="faq.hearts.q">Why am I losing hearts?</summary>
+              <p data-i18n="faq.hearts.a">You reaped a creature that was not marked. The unmarked still count toward the quota, but each one costs a heart. You start every run with five.</p>
+            </details>
+            <details>
+              <summary data-i18n="faq.mercy.q">Can I get my hearts back?</summary>
+              <p data-i18n="faq.mercy.a">Yes. Finish a night having reaped fewer than three living creatures and all five hearts return at dawn. That is the mercy rule, and it is the only way to heal.</p>
+            </details>
+            <details>
+              <summary data-i18n="faq.gameover.q">What happens when I run out of hearts?</summary>
+              <p data-i18n="faq.gameover.a">The run ends. Rise Again puts you back on night 1 with five hearts. Your lifetime souls, merciful nights, deepest night, and achievements are all kept.</p>
+            </details>
+            <details>
+              <summary data-i18n="faq.timeout.q">I ran out of time. Do I lose anything?</summary>
+              <p data-i18n="faq.timeout.a">No. Try Again restarts the same night with the hearts you began that night with, so hearts spent on a failed attempt come back.</p>
+            </details>
+            <details>
+              <summary data-i18n="faq.tap.q">My taps are not connecting.</summary>
+              <p data-i18n="faq.tap.a">Two things stop a swing. A creature outside your circle of light cannot be reached, so move closer first. Taps landing on the reaper itself are ignored on purpose, so the scythe never swings at its own bearer when a creature brushes past. Aim slightly away from your own sprite.</p>
+            </details>
+            <details>
+              <summary data-i18n="faq.escape.q">Can a marked soul outrun me?</summary>
+              <p data-i18n="faq.escape.a">No. Creature speed is capped at 85 percent of yours at every difficulty, so anything marked can always be caught. What runs out is the clock.</p>
+            </details>
+            <details>
+              <summary data-i18n="faq.tutorial.q">Can I see the tutorial again?</summary>
+              <p data-i18n="faq.tutorial.a">Yes. Open Profile from the night briefing screen and tap Tutorial. The four cards can be re-read as often as you like.</p>
+            </details>
+          </div>
+
+          <h2 data-i18n="support.progress.title">Progress and Game Center</h2>
+          <div class="faq">
+            <details>
+              <summary data-i18n="faq.gc.q">Do I have to use Game Center?</summary>
+              <p data-i18n="faq.gc.a">No. If you decline the sign-in or stay signed out, Reaper never asks again and simply keeps your records on the device. Sign in and the deepest-night leaderboard plus all nine achievements sync to your Apple Account.</p>
+            </details>
+            <details>
+              <summary data-i18n="faq.storage.q">Where is my progress stored?</summary>
+              <p data-i18n="faq.storage.a">On your device only. There is no Reaper account and no server of mine holding anything. Game Center achievements and leaderboard scores live with your Apple Account, under Apple's terms.</p>
+            </details>
+            <details>
+              <summary data-i18n="faq.sync.q">Does my progress move between iPhone and iPad?</summary>
+              <p data-i18n="faq.sync.a">Local records do not. Each device keeps its own hearts, cloak choice, and lifetime counts. Game Center achievements and your deepest-night score do follow your Apple Account across devices.</p>
+            </details>
+            <details>
+              <summary data-i18n="faq.reset.q">How do I wipe my progress and start clean?</summary>
+              <p data-i18n="faq.reset.a">Delete Reaper and install it again. That clears every local record, including the tutorial flag, so the game starts as it did on day one. Achievements already reported to Game Center stay with your Apple Account and are cleared from Game Center itself.</p>
+            </details>
+            <details>
+              <summary data-i18n="faq.achievements.q">An achievement did not unlock.</summary>
+              <p data-i18n="faq.achievements.a">Achievements are earned locally first and then reported to Game Center, so an unlock earned offline appears once you are back online and signed in. If one is still missing after that, email me with the achievement name and the night you were on.</p>
+            </details>
+          </div>
+
+          <h2 data-i18n="support.device.title">Sound, haptics, and devices</h2>
+          <div class="faq">
+            <details>
+              <summary data-i18n="faq.audio.q">How do I turn the music or sound off?</summary>
+              <p data-i18n="faq.audio.a">Tap the gear icon in the top corner during a night, or from the briefing screen. Music, sound, and haptics each have their own switch and the choice is remembered.</p>
+            </details>
+            <details>
+              <summary data-i18n="faq.haptics.q">Why do I feel no haptics?</summary>
+              <p data-i18n="faq.haptics.a">Haptics need an iPhone with a Taptic Engine. iPad has no haptic engine, so the game skips them silently rather than complaining. Check the pause screen in case the switch is simply off.</p>
+            </details>
+            <details>
+              <summary data-i18n="faq.offline.q">Does Reaper need an internet connection?</summary>
+              <p data-i18n="faq.offline.a">No. Every night runs entirely on device. Only Game Center syncing needs a connection, and Game Center is optional.</p>
+            </details>
+            <details>
+              <summary data-i18n="faq.requirements.q">What do I need to run it?</summary>
+              <p data-i18n="faq.requirements.a">An iPhone or iPad running iOS 18 or later. Reaper is one universal app, plays in landscape, and uses the full screen.</p>
+            </details>
+            <details>
+              <summary data-i18n="faq.language.q">Which languages does the game speak?</summary>
+              <p data-i18n="faq.language.a">The game itself is in English. This website is available in English, Slovak, and Czech.</p>
+            </details>
+            <details>
+              <summary data-i18n="faq.a11y.q">Is there anything for accessibility?</summary>
+              <p data-i18n="faq.a11y.a">Menus, overlays, and the pause switches carry VoiceOver labels and states. Music, sound, and haptics can each be switched off independently. The night itself is played by sight, so if something specific would help you play, tell me and I will look at it.</p>
+            </details>
+          </div>
+
+          <h2 data-i18n="support.report.title">Reporting a problem</h2>
+          <p data-i18n="support.report.text">A good report gets a fix much faster. Where you can, send:</p>
+          <ul>
+            <li data-i18n="support.report.device">Your device and iOS version, for example iPhone 15 Pro on iOS 18.4.</li>
+            <li data-i18n="support.report.night">The night number and what the screen showed when it went wrong.</li>
+            <li data-i18n="support.report.steps">What you did just before it happened, so I can reproduce it.</li>
+            <li data-i18n="support.report.shot">A screenshot or screen recording, if the problem is visible.</li>
+          </ul>
+          <p data-i18n-html="support.report.refund">Refunds and billing are handled by Apple, not by me. Use <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a> and sign in with the Apple Account that made the purchase.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="footer-links">
+          <a href="/" data-i18n="nav.home">Home</a>
+          <a href="/privacy" data-i18n="nav.privacy">Privacy</a>
+          <a href="mailto:pcesnek290@gmail.com?subject=Reaper" data-i18n="footer.contact">Contact</a>
+        </div>
+        <p class="footer-legal" data-i18n="footer.legal">Reaper, an independent game by Patrik Cesnek</p>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

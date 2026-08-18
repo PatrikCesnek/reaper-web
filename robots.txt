@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://reaper-ios.netlify.app/sitemap.xml
+Sitemap: https://reaper-before-dawn.netlify.app/sitemap.xml

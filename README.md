@@ -79,13 +79,13 @@ Netlify, publish directory `.`, no build command. `netlify.toml` carries the
 clean-URL redirects, the 404 fallback, security headers, and long cache headers
 for `assets/`.
 
-## When the game goes live
+## App Store
 
-1. Add an `offers` block with the real app id to the JSON-LD in `index.html`.
-2. Replace every `<span class="btn btn-pending">` with an `<a class="btn
-   btn-primary">` pointing at the App Store URL. They are in `index.html` (hero
-   and closing band).
-3. Update `lastmod` in `sitemap.xml`.
+Reaper is live at
+<https://apps.apple.com/app/reaper-before-dawn/id6802620718>. Every page links
+it: `index.html` in the JSON-LD `downloadUrl` and `offers`, the hero, and the
+closing band; `support.html` and `privacy.html` under the page heading; and
+`404.html` beside the way home. Keep them in step if it ever changes.
 
 ## Branches
 

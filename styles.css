@@ -320,18 +320,6 @@ p {
   color: var(--soul);
 }
 
-/* Pending App Store state: not a link until the app ships. */
-.btn-pending {
-  background: transparent;
-  border: 1px dashed var(--soul-deep);
-  color: var(--soul);
-  cursor: default;
-}
-
-.btn-pending:active {
-  transform: none;
-}
-
 /* --------------------------------------------------------------------------
    Hero - asymmetric split, torch panel on the right
    -------------------------------------------------------------------------- */

@@ -82,9 +82,10 @@ for `assets/`.
 ## App Store
 
 Reaper is live at
-<https://apps.apple.com/app/reaper-before-dawn/id6802620718>. The URL appears
-three times in `index.html`: the JSON-LD `downloadUrl` and `offers`, the hero
-button, and the closing band button. Keep them in step if it ever changes.
+<https://apps.apple.com/app/reaper-before-dawn/id6802620718>. Every page links
+it: `index.html` in the JSON-LD `downloadUrl` and `offers`, the hero, and the
+closing band; `support.html` and `privacy.html` under the page heading; and
+`404.html` beside the way home. Keep them in step if it ever changes.
 
 ## Branches
 

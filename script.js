@@ -29,7 +29,7 @@ const translations = {
     "nav.privacy": "Privacy",
     "footer.contact": "Contact",
     "footer.legal": "Reaper, an independent game by Patrik Cesnek",
-    "cta.pending": "Coming to the App Store",
+    "cta.store": "Download on the App Store",
     "cta.rules": "How it plays",
 
     "hero.eyebrow": "iPhone and iPad",
@@ -126,7 +126,7 @@ const translations = {
 
     "closing.title": "Dawn is coming either way.",
     "closing.text":
-      "Reaper is finished and heading to review. Support is already open if you need it.",
+      "Reaper is out now on iPhone and iPad. Support is open if you need it.",
 
     "support.title": "Support",
     "support.intro":
@@ -281,7 +281,7 @@ const translations = {
     "nav.privacy": "Súkromie",
     "footer.contact": "Kontakt",
     "footer.legal": "Reaper, nezávislá hra od Patrika Cesneka",
-    "cta.pending": "Čoskoro v App Store",
+    "cta.store": "Stiahnuť v App Store",
     "cta.rules": "Ako sa hrá",
 
     "hero.eyebrow": "iPhone a iPad",
@@ -378,7 +378,7 @@ const translations = {
 
     "closing.title": "Úsvit príde tak či tak.",
     "closing.text":
-      "Reaper je hotový a mieri na posúdenie. Podpora je otvorená už teraz, ak ju potrebuješ.",
+      "Reaper je už dostupný pre iPhone a iPad. Podpora je otvorená, ak ju potrebuješ.",
 
     "support.title": "Podpora",
     "support.intro":
@@ -532,7 +532,7 @@ const translations = {
     "nav.privacy": "Soukromí",
     "footer.contact": "Kontakt",
     "footer.legal": "Reaper, nezávislá hra od Patrika Cesneka",
-    "cta.pending": "Brzy v App Store",
+    "cta.store": "Stáhnout v App Store",
     "cta.rules": "Jak se hraje",
 
     "hero.eyebrow": "iPhone a iPad",
@@ -629,7 +629,7 @@ const translations = {
 
     "closing.title": "Úsvit přijde tak jako tak.",
     "closing.text":
-      "Reaper je hotový a míří na posouzení. Podpora je otevřená už teď, pokud ji potřebuješ.",
+      "Reaper je už dostupný pro iPhone a iPad. Podpora je otevřená, pokud ji potřebuješ.",
 
     "support.title": "Podpora",
     "support.intro":
